@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CryptoRides Layer-X Underground: Drip King Masaru GTS</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="nft-container common">
+	  <div class="video-wrapper">
+    <video id="nftVideo" class="nft-video" autoplay loop muted playsinline>
+      <source src="dripkingmasaru-gts.mp4" type="video/mp4">
+      Your browser does not support the ability to play HTML5 videos.
+    </video>
+    <div class="nft-overlay">
+	<h2 class="nft-title common"><strong>Drift King Masaru GTS</strong></h2>
+      <div class="nft-traits">
+  		<span class="glow common">Color: Champagne</span><br>
+		<span class="glow rare">FX: HP TurboBurst™ Dynamics</span><br>
+		<span class="glow rare">Edition: Performance</span><br>
+		<span class="glow rare">Rating: Common</span><br>
+      </div>
+		</div>
+    </div>
+  </div>
+  <script>
+  const video = document.getElementById('nftVideo');
+  video.playbackRate = 0.65;
+  video.addEventListener('click', () => {
+    if (video.paused) {
+      video.play();
+    } else {
+      video.pause();
+    }
+  });
+  </script>
+</body>
+</html>
