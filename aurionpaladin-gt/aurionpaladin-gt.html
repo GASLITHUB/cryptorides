@@ -9,31 +9,31 @@
 <body>
   <div class="nft-container common">
    <div class="video-wrapper">
-    <video id="nftVideo" autoplay loop muted playsinline>
-      <source src="aurionpaladin-gt.mp4" type="video/mp4" />
+    <video id="nftVideo" class="nft-video" autoplay loop muted playsinline>
+      <source src="aurionpaladin-gt.mp4" type="video/mp4">
       Your browser does not support the ability to play HTML5 videos.
     </video>
     <div class="nft-overlay">
-      <h2 class="nft-title common"><strong>Aurion Paladin GT</strong></h2>
+	<h2 class="nft-title common"><strong>Aurion Paladin GT</strong></h2>
       <div class="nft-traits">
-        <span class="glow common">Color: Oxide</span><br>
-        <span class="glow common">FX: Nano-Skin Emulator™</span><br>
-        <span class="glow common">Edition: Street</span><br>
-        <span class="glow common">Rating: Common</span><br>
+  		<span class="glow common">Color: Oxide</span><br>
+		<span class="glow common">FX: Nano-Skin Emulator™</span><br>
+		<span class="glow common">Edition: Street</span><br>
+		<span class="glow common">Rating: Common</span><br>
       </div>
-	</div>
+	 </div>
     </div>
   </div>
   <script>
-    const video = document.getElementById('nftVideo');
-    video.playbackRate = 0.68;
-    video.addEventListener('click', () => {
-      if (video.paused) {
-        video.play();
-      } else {
-        video.pause();
-      }
-    });
+  const video = document.getElementById('nftVideo');
+  video.playbackRate = 0.70;
+  video.addEventListener('click', () => {
+    if (video.paused) {
+      video.play();
+    } else {
+      video.pause();
+    }
+  });
   </script>
 </body>
 </html>
