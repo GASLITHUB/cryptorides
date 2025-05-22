@@ -6,34 +6,130 @@
   <title>CryptoRides Layer-X Underground: Aurion Paladin GT</title>
   <link rel="stylesheet" href="style.css" />
 </head>
-<body>
-  <div class="nft-container common">
-   <div class="video-wrapper">
-    <video id="nftVideo" class="nft-video" autoplay loop muted playsinline>
-      <source src="aurionpaladin-gt.mp4" type="video/mp4">
-      Your browser does not support the ability to play HTML5 videos.
-    </video>
-    <div class="nft-overlay">
-	<h2 class="nft-title common"><strong>Aurion Paladin GT</strong></h2>
+<video controls>
+    <source src="https://raw.githubusercontent.com/gaslithub.github.io/cryptorides/aurionpaladin-gt/aurionpaladin-gt.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
+<div class="nft-overlay">
+      <h2 class="nft-title rare"><strong>Aurion Paladin GT</strong></h2>
       <div class="nft-traits">
-  		<span class="glow common">Color: Oxide</span><br>
-		<span class="glow common">FX: Nano-Skin Emulator™</span><br>
-		<span class="glow common">Edition: Street</span><br>
-		<span class="glow common">Rating: Common</span><br>
+        <span class="glow rare">Color: Oxide</span><br>
+        <span class="glow rare">FX: Nano-Skin Emulator™</span><br>
+        <span class="glow rare">Edition: Street</span><br>
+        <span class="glow rare">Rating: Rare</span><br>
       </div>
-	 </div>
-    </div>
-  </div>
+	</div>
   <script>
-  const video = document.getElementById('nftVideo');
-  video.playbackRate = 0.70;
-  video.addEventListener('click', () => {
-    if (video.paused) {
-      video.play();
-    } else {
-      video.pause();
-    }
-  });
+    const video = document.getElementById('nftVideo');
+    video.playbackRate = 0.70;
+    video.addEventListener('click', () => {
+      if (video.paused) {
+        video.play();
+      } else {
+        video.pause();
+      }
+    });
   </script>
-</body>
+    <style>
+        body {
+  margin: 0;
+  background: black;
+  color: white;
+  font-family: "Franklin Gothic Bold", "Arial Black", sans-serif;
+  font-weight: 200;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;}
+
+.nft-container {
+  position: relative;
+  width: 840px;
+  height: 460px;
+  border-radius: 12px;
+  overflow: hidden;}
+
+.video-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;}
+
+video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;}
+
+.nft-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;}
+
+.nft-overlay {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 15px;
+  opacity: 0;
+  transition: opacity 0.3s ease;}
+
+.nft-container:hover .nft-overlay {
+  opacity: 1;}
+
+.nft-title {
+  font-size: 1.75em;
+  margin: 0; pointer-events: none;}
+
+.nft-title.legendary {color: #F4B20C; text-shadow:
+    0 0 15px #FFFFFF,
+    0 0 5px #FFFFFF,
+    0 0 20px #F4B20C,
+    0 0 10px #FFFFFF;}
+
+.nft-title.epic {color: #9022E2; text-shadow:
+    0 0 15px #FFFFFF,
+    0 0 5px #FFFFFF,
+    0 0 20px #9022E2,
+    0 0 10px #FFFFFF;}
+
+.nft-title.rare {color: #0931EF; text-shadow:
+    0 0 15px #FFFFFF,
+    0 0 5px #076BE3,
+    0 0 20px #076BE3,
+    0 0 10px #076BE3;}
+
+.nft-title.common {color: #00FD0B; text-shadow:
+    0 0 15px #FFFFFF,
+    0 0 5px #065809,
+    0 0 20px #0D1E0E,
+    0 0 10px #14DA1D;}
+
+.nft-traits {
+  margin-top: 5px;
+  font-size: 0.9em;
+  line-height: 1.5;}
+
+.glow.legendary {text-shadow: 0 0 40px #F4B20C;}
+.glow.epic {text-shadow: 0 0 40px #2C0C45;}
+.glow.rare {text-shadow: 0 0 40px #151FDD;}
+.glow.common {text-shadow: 0 0 40px #14DA1D;}
+
+.nft-container.legendary {
+  box-shadow: 0 0 60px #F4B20C;
+  border: 6px solid #F4B20C;}
+
+.nft-container.epic {
+  box-shadow: 0 0 60px #9022E2;
+  border: 6px solid #9022E2;}
+
+.nft-container.rare {
+  box-shadow: 0 0 100px #2A3BFF;
+  border: 6px solid #076BE3;}
+
+.nft-container.common {
+  box-shadow: 0 0 60px #14DA1D;
+  border: 6px solid #14DA1D;}
+</style>
 </html>
